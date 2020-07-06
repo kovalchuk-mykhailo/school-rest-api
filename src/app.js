@@ -4,7 +4,7 @@ const db = require("./db/sequelize");
 
 const app = express();
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.HTTP_PORT || 5000;
 
 db.authenticate()
   .then(() => {

@@ -33,12 +33,12 @@ const Lesson = require("../models/Lesson")(sequelize, Sequelize);
 Group.hasMany(Student, { foreignKey: "groupid" });
 Group.hasMany(Lesson, { foreignKey: "groupid" });
 
-Student.belongsTo(Group);
+Student.belongsTo(Group, { foreignKey: "groupid" });
 
 Teacher.hasMany(Lesson, { foreignKey: "teacherid" });
 
-Lesson.belongsTo(Teacher);
-Lesson.belongsTo(Group);
+Lesson.belongsTo(Teacher, { foreignKey: "teacherid" });
+Lesson.belongsTo(Group, { foreignKey: "groupid" });
 
 db = {
   ...db,

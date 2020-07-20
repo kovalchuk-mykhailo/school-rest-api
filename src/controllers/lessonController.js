@@ -1,4 +1,4 @@
-const lessonService = require("../services/lesson.service");
+const lessonService = require("../services/lessonService");
 
 module.exports = {
   getAll: async (req, res, next) => {

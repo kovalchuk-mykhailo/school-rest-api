@@ -4,7 +4,7 @@ const groupRouter = require("./groups");
 const teacherRouter = require("./teachers");
 const studentRouter = require("./students");
 
-const errorHandler = require("../helpers/error.builder.helper");
+const errorHandler = require("../helpers/errorBuilderHelper");
 
 router.use("/api/v1/groups", groupRouter);
 router.use("/api/v1/students", studentRouter);

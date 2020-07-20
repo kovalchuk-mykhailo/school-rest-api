@@ -1,4 +1,4 @@
-const groupService = require("../services/group.service");
+const groupService = require("../services/groupService");
 
 module.exports = {
   async getAll(req, res, next) {

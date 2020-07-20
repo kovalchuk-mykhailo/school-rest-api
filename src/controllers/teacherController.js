@@ -1,4 +1,4 @@
-const teacherService = require("../services/teacher.service");
+const teacherService = require("../services/teacherService");
 
 module.exports = {
   async getAll(req, res, next) {
